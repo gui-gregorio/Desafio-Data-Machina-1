@@ -8,12 +8,12 @@ A API aceita um valor chamado fibonacci, para que retorne o termo da sequência 
 ### Exemplo de uso:
 #### 1:
 {
-	"fibonacci":19 
+	"resultado":19 
 }
 #### 2:
 Retorna 4181
 
 {
-	"fibonacci":  10
+	"resultado":  10
 }
 Retorna 55
