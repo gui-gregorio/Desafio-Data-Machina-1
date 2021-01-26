@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
@@ -13,9 +13,8 @@ def fibonacci(n):
 
 
 # Execução da API:
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['POST'])
 def home():
-    resultado = request.json["fibonacci"]  # aceita o request de um valor para poder fazer o cálculo
+    resultado = request.json["resultado"]  # aceita o request de um valor para poder fazer o cálculo
     n1 = fibonacci(int(resultado))  # Converte o input para INT e faz o cálculo
-    n2 = str(n1)  # converte o resultado novamente para STR, para que possa retornar na API
-    return n2
+    return jsonify(n1)  #retorna o resultado
