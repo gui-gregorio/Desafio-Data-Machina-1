@@ -5,6 +5,8 @@
 ### Parametro aceito
 A API aceita um valor chamado fibonacci, para que retorne o termo da sequência de Fibonacci, basta usar o parâmetro "fibonacci" : n. 
 
+Para usar é só mandar o request com post na URL: http://127.0.0.1:5000/resposta
+
 ### Exemplo de uso:
 #### 1:
 {
